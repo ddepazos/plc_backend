@@ -1,0 +1,14 @@
+{
+  "name": "proletarian-coin-demo",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Demo local de PLC con persistencia JSON o PostgreSQL, sin dinero ni credenciales reales",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "node --test backend/test/*.test.js",
+    "db:migrate": "node plc_bd/migrate.js"
+  },
+  "dependencies": { "pg": "^8.16.3" }
+}
